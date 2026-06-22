@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực tập Speaking với AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Thực tập Speaking với AI</h1>
+        <nav>
+            <a href="index.html">Trang chủ</a>
+        </nav>
+    </header>
+    <main>
+        <p>Phần này mô phỏng một cuộc hội thoại giữa học viên và trợ lý AI. Bạn hãy nhập câu hỏi hoặc câu trả lời vào ô bên dưới và nhấn "Gửi" để gửi tin nhắn. Mặc định, hệ thống sẽ phản hồi lại chính xác câu bạn nhập, đây chỉ là mô phỏng. Để tích hợp AI thực sự (ví dụ dùng API của OpenAI), bạn cần cài đặt thêm và cập nhật mã nguồn trong tệp <code>chat.js</code>.</p>
+        <div id="chat-window" style="border: 1px solid #ccc; padding: 10px; max-width: 600px; height: 300px; overflow-y: scroll; background-color: #ffffff;"></div>
+        <div style="margin-top: 10px;">
+            <input type="text" id="chat-input" placeholder="Nhập tin nhắn của bạn..." style="width: 70%; padding: 8px;">
+            <button onclick="sendMessage()" style="padding: 8px 16px;">Gửi</button>
+        </div>
+    </main>
+    <footer>
+        Trang web thuộc Ms. Ngọc Elite English
+    </footer>
+    <script src="tts.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>

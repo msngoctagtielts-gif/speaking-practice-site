@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ vựng minh họa</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles for vocabulary cards */
+        .vocab-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .vocab-card {
+            width: 260px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .vocab-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .vocab-card h3 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+        .vocab-card p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Từ vựng minh họa</h1>
+        <nav>
+            <a href="index.html">Trang chủ</a>
+        </nav>
+    </header>
+    <main>
+        <p>Trang này cung cấp một số từ vựng cơ bản kèm hình ảnh minh họa và ví dụ. Bạn có thể thay thế hình ảnh bằng ảnh thực tế phù hợp với từ vựng.</p>
+        <div class="vocab-container">
+            <div class="vocab-card">
+                <img src="https://via.placeholder.com/250" alt="Hello placeholder">
+                <h3>Hello</h3>
+                <p><strong>Ý nghĩa:</strong> Xin chào</p>
+                <p><strong>Ví dụ:</strong> <em>Hello, my name is Ngọc.</em></p>
+                <button onclick="speakText('hello', 'en-US')">Phát âm</button>
+            </div>
+            <div class="vocab-card">
+                <img src="https://via.placeholder.com/250" alt="Goodbye placeholder">
+                <h3>Goodbye</h3>
+                <p><strong>Ý nghĩa:</strong> Tạm biệt</p>
+                <p><strong>Ví dụ:</strong> <em>Goodbye! See you tomorrow.</em></p>
+                <button onclick="speakText('goodbye', 'en-US')">Phát âm</button>
+            </div>
+            <div class="vocab-card">
+                <img src="https://via.placeholder.com/250" alt="Please placeholder">
+                <h3>Please</h3>
+                <p><strong>Ý nghĩa:</strong> Làm ơn</p>
+                <p><strong>Ví dụ:</strong> <em>Please, can you help me?</em></p>
+                <button onclick="speakText('please', 'en-US')">Phát âm</button>
+            </div>
+            <div class="vocab-card">
+                <img src="https://via.placeholder.com/250" alt="Thank you placeholder">
+                <h3>Thank you</h3>
+                <p><strong>Ý nghĩa:</strong> Cảm ơn</p>
+                <p><strong>Ví dụ:</strong> <em>Thank you for your help!</em></p>
+                <button onclick="speakText('thank you', 'en-US')">Phát âm</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Trang web thuộc Ms. Ngọc Elite English
+    </footer>
+    <script src="tts.js"></script>
+</body>
+</html>
